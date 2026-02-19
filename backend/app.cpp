@@ -55,6 +55,8 @@ std::string response =
     body;
 
 send(client_fd, response.c_str(), response.length(), 0);
+close(client_fd);
+
 
     }
     
